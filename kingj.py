@@ -3,6 +3,9 @@
 import os, sys, time, uuid, hashlib, random, requests, base64, subprocess
 from concurrent.futures import ThreadPoolExecutor as tred
 from random import randint as rr
+import os
+os.environ['LANG'] = 'en_US.UTF-8'
+os.environ['LC_ALL'] = 'en_US.UTF-8'
 
 # ---- BANNER ----
 def banner():
