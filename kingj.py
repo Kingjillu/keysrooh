@@ -43,7 +43,7 @@ def get_machine_key():
     return "ROOH-" + hashlib.md5(raw.encode()).hexdigest().upper()[:12]
 
 def check_approval(key):
-    url = "https://raw.githubusercontent.com/cadetrooh/roohkey/refs/heads/main/keys.txt"
+    url = "https://raw.githubusercontent.com/kingjillu/keysrooh/refs/blob/main/keys.txt"
     try:
         resp = requests.get(url, timeout=10)
         if resp.status_code == 200:
