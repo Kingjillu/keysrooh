@@ -20,8 +20,7 @@ def banner():
     print("\u001B[1;36m" + "█"*60 + "\u001B[0m")
     print("\u001B[1;32m" + " " * 12 + "💀 KING PAID CLONING TOOL IN FREE 💀" + " " * 12 + "\u001B[0m")
     print("\u001B[1;36m" + "█"*60 + "\u001B[0m")
-    print("
-")
+    print("\n")
 
 # ---- WHATSAPP LINK (PLAIN TEXT â€“ NO ENCODING) ----
 WHATSAPP_LINK = "https://chat.whatsapp.com"
