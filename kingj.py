@@ -59,25 +59,25 @@ def check_approval(key):
 def approval_flow():
     banner()
     key = get_machine_key()
-    print("\u001B[1;37m🔑 YOUR UNIQUE KEY:\u001B[1;33m", key, "\u001B[0m")
-    print("\u001B[1;37m📲 SEND THIS KEY TO WHATSAPP GROUP FOR APPROVAL\u001B[0m")
-    print("\u001B[1;36m" + "─"*50 + "\u001B[0m")
-    print("\u001B[1;32m[ A ] OPEN WHATSAPP GROUP\u001B[0m")
-    print("\u001B[1;31m[ B ] CHECK APPROVAL\u001B[0m")
-    print("\u001B[1;36m" + "─"*50 + "\u001B[0m")
-    choice = input("\u001B[1;37mCHOOSE (A/B): \u001B[0m").strip().upper()
+    print("\033[1;37mðŸ”‘ YOUR UNIQUE KEY:\033[1;33m", key, "\033[0m")
+    print("\033[1;37mðŸ“² SEND THIS KEY TO WHATSAPP GROUP FOR APPROVAL\033[0m")
+    print("\033[1;36m" + "â”€"*50 + "\033[0m")
+    print("\033[1;32m[ A ] OPEN WHATSAPP GROUP\033[0m")
+    print("\033[1;31m[ B ] CHECK APPROVAL\033[0m")
+    print("\033[1;36m" + "â”€"*50 + "\033[0m")
+    choice = input("\033[1;37mCHOOSE (A/B): \033[0m").strip().upper()
     if choice == 'A':
         open_whatsapp()
         time.sleep(2)
         approval_flow()
     elif choice == 'B':
         if check_approval(key):
-            print("\u001B[1;32m✅ APPROVED! WELCOME TO KING CLONER\u001B[0m")
+            print("\033[1;32mâœ… APPROVED! WELCOME TO ROOH CLONER\033[0m")
             time.sleep(1)
             return True
         else:
-            print("\u001B[1;31m❌ NOT APPROVED – CONTACT ADMIN ON WHATSAPP\u001B[0m")
-            print("\u001B[1;33m💡 Make sure admin has added your key to keys.txt\u001B[0m")
+            print("\033[1;31mâŒ NOT APPROVED â€“ CONTACT ADMIN ON WHATSAPP\033[0m")
+            print("\033[1;33mðŸ’¡ Make sure admin has added your key to keys.txt\033[0m")
             time.sleep(3)
             approval_flow()
     else:
