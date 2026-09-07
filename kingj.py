@@ -72,13 +72,13 @@ def approval_flow():
         approval_flow()
     elif choice == 'B':
         if check_approval(key):
-    print("\u001B[1;32m✅ APPROVED! WELCOME TO KING CLONER\u001B[0m")
-    time.sleep(1)
+            print("\u001B[1;32m✅ APPROVED! WELCOME TO KING CLONER\u001B[0m")
+            time.sleep(1)
             return True
         else:
             print("\u001B[1;31m❌ NOT APPROVED – CONTACT ADMIN ON WHATSAPP\u001B[0m")
-print("\u001B[1;33m💡 Make sure admin has added your key to keys.txt\u001B[0m")
-time.sleep(3)
+            print("\u001B[1;33m💡 Make sure admin has added your key to keys.txt\u001B[0m")
+            time.sleep(3)
             approval_flow()
     else:
         approval_flow()
